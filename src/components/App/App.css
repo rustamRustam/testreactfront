@@ -1,0 +1,100 @@
+.tema-emblema {
+    background-image: url("./icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 72px;
+    height: 72px;
+    float: left;
+}
+
+.tema-buttom {
+    float: right;
+    height: 72px;
+    line-height: 72px;
+}
+
+.tema-sun {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tema-sun:hover {
+    cursor: pointer;
+}
+
+.tema:after {
+  content:'';
+  display:table;
+  clear:both;
+}
+
+.text_dots{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.App {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.App .app-vitrina {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.App .pagination,
+.App .filters {
+    margin: 10px 0;
+}
+
+.App .filters {
+    display: block;
+    width: 100%;
+}
+
+.App .filters>div {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    width: calc(25% - 24px);
+}
+
+.pathSave {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .App .app-vitrina {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .App .filters>div {
+        display: block;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .App .app-vitrina {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .App .diaposon-container .diaposon-from_to>span,
+    .App .diaposon-container .diaposon-from_to>input {
+        display: block;
+    }
+    .App .diaposon-container .diaposon-from_to>span {
+        line-height: 1;
+    }
+    .App .diaposon-container .diaposon-from_to>input {
+        width: calc(100% - 16px);
+        box-sizing: border-box;
+        height: 36px;
+    }
+}

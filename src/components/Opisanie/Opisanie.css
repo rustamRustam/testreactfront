@@ -1,0 +1,40 @@
+.opisanie-container {
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+
+    box-sizing: border-box;
+    background-color: #808080cf;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding-left: 8px;
+
+    transition: bottom 300ms ease;
+}
+
+.kartochka-container:hover .opisanie-container {
+    bottom: 0;
+}
+
+.opisanie-name {
+    font-weight: bold;
+    padding: 6px 0;
+}
+
+.opisanie-data {
+    margin-top: 4px;
+    display: table;
+}
+
+.opisanie-title-info {
+    display: table-row;
+}
+
+.opisanie-title-info div {
+    display: table-cell;
+}
+
+.left-space {
+    border-left: 0.2em solid transparent;
+}

@@ -1,0 +1,47 @@
+.numeraciya-container {
+    text-align: left;
+    padding-left: 40px;
+
+}
+
+.numeraciya-container .numeraciya-step {
+    display: inline-block;
+}
+
+.numeraciya-container .numeraciya-view {
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    min-height: 30px;
+    min-width: 30px;
+    line-height: 30px;
+    margin-left: -1px;
+    text-align: center;
+}
+
+.numeraciya-container .numeraciya-view.is-current {
+    background-color: black;
+    color: white;
+    pointer-events: none;
+}
+
+.numeraciya-container .numeraciya-view.is-disabled {
+    color: gray;
+    pointer-events: none;
+}
+
+.numeraciya-container .numeraciya-view:first-child {
+    margin-left: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.numeraciya-container .numeraciya-view:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.numeraciya-container .numeraciya-view:not(.is-current):hover {
+    cursor: pointer;
+    background-color: #80808088;
+}

@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+  font-size: 16px;
+}
+
+#root {
+    background-color: white;
+}
+
+.finter-invert {
+    filter: invert(100%);
+}
+
+.finter-invert img {
+    filter: invert(100%);
+}

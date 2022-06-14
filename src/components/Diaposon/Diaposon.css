@@ -1,0 +1,75 @@
+.diaposon-container {
+    position: relative;
+    width: 260px;
+    height: 36px;
+    line-height: 36px;
+    background-color: white;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.diaposon-container div {
+    width: inherit;
+}
+
+.diaposon-container .diaposon-value {
+    background-color: inherit;
+    box-sizing: border-box;
+    height: inherit;
+    width: 100%;
+    padding: 0 36px 0 8px;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.diaposon-container .diaposon-value .diaposon-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+}
+
+.diaposon-container .diaposon-from_to {
+    background-color: inherit;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border: 1px solid black;
+    border-top-color: #acacac;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 1000;
+    margin-top: -1px;
+    width: 100%;
+    text-align: center;
+}
+
+.diaposon-container .diaposon-from_to input {
+    display: inline-block;
+    width:  80px;
+    margin: 8px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: #dbdbdb;
+}
+
+.diaposon-container:not(.opened) .diaposon-from_to {
+    display: none;
+}
+
+/*opened*/
+.diaposon-container.opened .diaposon-value {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.diaposon-container.opened .diaposon-value .diaposon-button {
+  transform: scale(1,-1);
+}
